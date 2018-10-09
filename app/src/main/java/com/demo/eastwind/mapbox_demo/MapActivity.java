@@ -53,7 +53,7 @@ public class MapActivity extends AppCompatActivity implements LocationEngineList
             initializeLocationEngine();
             // Create an instance of the plugin. Adding in LocationLayerOptions is also an optional
             // parameter
-            LocationLayerPlugin locationLayerPlugin = new LocationLayerPlugin(mapView, mapboxMap);
+            locationLayerPlugin = new LocationLayerPlugin(mapView, mapboxMap);
 
             // Set the plugin's camera mode
             locationLayerPlugin.setCameraMode(CameraMode.TRACKING);
